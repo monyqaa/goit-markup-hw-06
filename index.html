@@ -466,9 +466,59 @@
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="18" height="18">
-            <use href="./images/modal-icons.svg#icon-close-1"></use>
+            <use href="./images/icons.svg#icon-close-1"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
+          <fieldset class="fieldset">
+            <label for="name">Imię</label>
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+            <input class="form-personal-input" type="text" id="name" />
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="phone">Telefon</label>
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+            <input
+              class="form-personal-input"
+              type="tel"
+              id="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+            />
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="mail">Email</label>
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+            <input class="form-personal-input" type="email" id="mail" />
+          </fieldset>
+
+          <fieldset class="fieldset user-comment">
+            <label for="comment">Komentarz</label>
+            <textarea class="textarea" placeholder="Wprowadź tekst"></textarea>
+          </fieldset>
+          <label class="legal-checkbox">
+            <input class="checkbox" type="checkbox" id="legal" />
+            <!--span?-->
+            <svg class="checkbox-icon" width="15" height="15">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+            <svg class="checked-icon" width="15" height="15">
+              <use href="./images/sprite.svg#icon-checked"></use>
+            </svg>
+            <p class="checkbox-text">
+              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+              <a href="#">Politykę Prywatności</a>.
+            </p>
+            <!--span?-->
+          </label>
+          <button class="modal-form-button" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
 
