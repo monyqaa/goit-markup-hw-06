@@ -72,18 +72,11 @@ a {
   color: var(--highlight-color);
 }
 
-.mail-icon {
-  --color2: currentColor;
+.header-contact-icon {
+  fill: currentColor;
   margin-right: 10px;
   vertical-align: middle;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.phone-icon {
-  --color4: currentColor;
-  margin-right: 10px;
-  vertical-align: middle;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .first-headline {
@@ -369,21 +362,24 @@ header {
   display: flex;
   width: 44px;
   height: 44px;
-  background: var(--second-type-color);
+  background-color: var(--second-type-color);
+  color: #afb1b8;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
+  fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--highlight-color);
-  --color1: var(--second-type-color);
+  color: var(--second-type-color);
 }
 
 .team-li {
@@ -405,13 +401,14 @@ header {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  fill: #afb1b8;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
 .client-link:focus {
-  --color1: var(--highlight-color);
+  fill: var(--highlight-color);
   border: 1px solid var(--highlight-color);
 }
 
@@ -438,8 +435,8 @@ header {
   display: flex;
   width: 44px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.1);
-  --color1: var(--second-type-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--second-type-color);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -447,10 +444,14 @@ header {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-social-link .footer-icon {
+  fill: currentColor;
+}
+
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--highlight-color);
-  --color1: var(--second-type-color);
+  fill: var(--second-type-color);
 }
 
 .footer-right {
