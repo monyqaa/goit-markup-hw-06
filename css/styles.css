@@ -454,7 +454,7 @@ header {
   fill: var(--second-type-color);
 }
 
-.footer-right {
+.footer-middle {
   margin-left: 70px;
 }
 
@@ -466,6 +466,57 @@ header {
 .mail-footer {
   margin-top: 9px;
   margin-bottom: 9px;
+}
+
+.footer-right {
+  margin-left: 78px;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  outline: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 0 15px 16px;
+  color: var(--second-type-color);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.footer-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+
+.footer-form-btn {
+  background: var(--highlight-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  color: var(--second-type-color);
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  padding: 0;
+  position: absolute;
+  margin-left: 12px;
+}
+
+.footer-send-icon {
+  vertical-align: middle;
+  margin-left: 24px;
 }
 
 .portfolio-buttons {
