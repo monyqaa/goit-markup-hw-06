@@ -472,6 +472,11 @@ header {
   margin-left: 78px;
 }
 
+.footer-form {
+  display: flex;
+  gap: 12px;
+}
+
 .footer-input {
   width: 358px;
   height: 50px;
@@ -494,7 +499,6 @@ header {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  position: relative;
 }
 
 .footer-form-btn {
@@ -510,8 +514,6 @@ header {
   line-height: 1.875;
   letter-spacing: 0.06em;
   padding: 0;
-  position: absolute;
-  margin-left: 12px;
 }
 
 .footer-send-icon {
